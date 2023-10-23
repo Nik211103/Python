@@ -49,3 +49,33 @@ if count > summ:
 print(sum)
 print(count)
 """
+#Создайте программу, которая запрашивает у пользователя число и выводит его факториал.
+""""
+n = int(input("Введите число "))
+fac = n
+count = n
+while count > 1:
+    count = count - 1
+    fac = fac * count
+print(f"\nФакториал числа {n} = {fac}")
+
+#Напишите программу, которая определяет, является ли заданное число простым.
+import math
+
+n = int(input("Введите число: "))
+
+if n > 1:
+    is_prime = True
+    for i in range(2, int(math.sqrt(n)) + 1):
+        if n % i == 0:
+            is_prime = False
+            break
+    
+    if is_prime:
+        print("Число является простым.")
+    else:
+        print("Число не является простым.")
+else:
+    print("Число не является простым.")
+"""
+
