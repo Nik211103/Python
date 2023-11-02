@@ -1,0 +1,6 @@
+﻿import redis 
+
+with redis.Redis() as redis_server:
+    a = 1
+    b = 1
+redis_server.lpush("queue" , 1)
